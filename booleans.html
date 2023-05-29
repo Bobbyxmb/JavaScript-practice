@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>booleans</title>
+</head>
+<body>
+   <script>
+     true
+     false
+
+     console.log(3 < 5);
+     console.log( 3 > 5);
+
+     console.log( 5 == '5'); // the double equals sign is used to check if two values are the same, just like the three equal sign. but the two equals sign does type conversion.
+     console.log(7 >= 6);
+
+     console.log(7 <= 6);
+     console.log(7 === 7);
+     console.log(7 !== 6);
+     // comparison operators has lower value than maths operators eg;
+     console.log(4 > 5-3);
+
+     if (true ) {console.log('hey there')}
+     if (false) {console.log('hey there')}
+     // what this means is that if the statement is true, the compute would run the code, but if its false it will not.
+
+     if (true) {console.log('happy day');}
+      else{
+        console.log('too bad')
+      };
+      if (false) {console.log('happy day');}
+      else {
+        console.log('too bad');
+      }
+      // what this means is that if the boolean is true, the computer runs the first code, but if its false, it runs the code inside else.
+
+      if ( 29 >= 18) { console.log('can take alcohol');}
+      else {console.log('can not take alcohol');};
+
+      if ( 15 > 18) {console.log('can take alcohol');}
+      else { console.log('can not take alcohol');};
+
+      if (15 > 18) { console.log('you can drink');}
+      else if (18 >= 17) {console.log('almost there!');}
+      else { 'you cannot drink'};
+
+      // if-statement can also be used with variables e.g
+
+      const age = 18
+
+      if (15 > age) { console.log('you can drink');}
+      else if (age >= 17) {console.log('almost there!');}
+      else { 'you cannot drink'};
+
+      if ( 29 >= age) { console.log('can take alcohol');}
+      else {console.log('can not take alcohol');};
+
+    // LOGICAL OPERATORS;
+
+    console.log(true && true); // this is called the AND operator,checks if two booleans are true.
+    console.log(0.1 >= 0 && 0.1 < 1/3);
+ 
+    console.log(true || false); // this is called the OR operator, used to check if either of the booleans is true.
+
+    console.log(!true); // this is known as the NOT operator, changes one boolean value to another.
+    
+
+
+
+
+
+   </script>
+</body>
+</html> 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+   <script>
+    
+    const product = {
+      name:'socks',
+      price: '1090'
+    };
+    console.log(product);
+    console.log(product.price);
+    console.log(product.name);
+
+
+    product.name = 'oraimo power bank';
+    console.log(product);
+
+    product.newproperty = 'windows';
+    console.log(product);
+
+    delete product.name;
+    console.log(product);
+
+    const product1 = {
+      name:'socks',
+      price: '1090'
+    };
+    console.log(product1);
+    console.log(product1.price);
+    console.log(product1.name);
+
+
+    product1.name = 'oraimo power bank';
+    console.log(product1);
+
+    product1.newproperty = 'windows';
+    console.log(product1);
+
+
+    // LET ME TEST MYSELF WITH FUNCTION HERE.
+
+    function checkObject (){
+    console.log(product);
+    console.log(product1);
+    }
+   checkObject();
+  
+    
+    function checkObject1 (){
+      product1.name = 'car'
+    console.log(product);
+    console.log(product1);
+    }
+    checkObject1 ();   
+   </script>
+</body>
+</html>

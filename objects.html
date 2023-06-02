@@ -8,7 +8,7 @@
 </head>
 <body>
    <script>
-    
+    /*
     const product = {
       name:'socks',
       price: '1090'
@@ -57,7 +57,109 @@
     console.log(product);
     console.log(product1);
     }
-    checkObject1 ();   
+    checkObject1 (); 
+    */
+
+    const product2 = {
+      name : 'shirt'
+    }
+    console.log(product2);
+    console.log (product2.name);
+
+    // dot notation for accessing a content of an object.
+
+    console.log (product2['name']);
+
+    // bracket notation, another way of accessing the contents of an object. this is mainly used to reach properties that don't normally work with dot notations eg.
+/*
+    console.log(product2.delivery-time);
+    // this cant work out because javascript sees the - sign as a minus sign, so dot notation can't be used here. this is where bracket notation comes in. eg;
+  */
+
+    console.log(product2 ['delivery-time']);
+/* 
+we can also use bracket notation to add value to an object. eg;
+*/ 
+const product3 = {
+      name : 'sneakers',
+      ['delivery-time'] : '1 day'
+    };
+    console.log(product3);
+    console.log(product3.name);
+    console.log(product3 ['delivery-time']);
+
+    /*
+    we can add any value into an object, including ; strings, booleans, numbers and even objects eg;
+    */
+
+    const product4 = {
+      name : 'sneakers',
+      ['delivery-time'] : '1 day',
+      ratings: {
+        stars: 4.5,
+        count: 87
+      }, 
+      }
+
+    console.log(product4);
+    console.log(product4.ratings);
+    console.log(product4.ratings.count);
+    // note that the above object is called nested object because it contains an object inside an object.
+
+    /*
+    another property that we can save inside an object is function. eg;
+    */
+
+    const product5 = {
+      name : 'sneakers',
+      ['delivery-time'] : '1 day',
+      ratings: {
+        stars: 4.5,
+        count: 87
+      },
+      fun: function functionA (){
+      console.log('function inside an object');
+      }
+      }
+
+    console.log(product5);
+    console.log(product5.ratings);
+    console.log(product5.ratings.count);
+    product5.fun();
+
+    // when we save a function inside an object, it is called a Method.
+/*
+     BUILT-IN OBJECTS 
+  //  - JSON (JavaScript Object Notation): this is basically a syntax similar to JS object but with less features. JSON does not support single quotes and functions.
+
+     const product5 = {
+      "name" : "sneakers",
+      "delivery-time" : "1 day",
+      "ratings": {
+        "stars": 4.5,
+        "count": 87
+      }
+      }
+
+     // we use JSON mainly when we send data b/w two computers and when we store data.
+      Note: the built-in JSON converts JS objects to JSON. eg;
+
+
+      console.log(JSON.stringify(product5));
+
+     // the JSON can also be converted to JS object, eg;
+
+      const jsonString =JSON.stringify(product5)
+
+     console.log(JSON.parse(jsonString)); 
+
+    - localStorage 
+*/
+
+
+    
+
+
    </script>
 </body>
 </html>

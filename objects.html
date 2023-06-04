@@ -153,13 +153,37 @@ const product3 = {
 
      console.log(JSON.parse(jsonString)); 
 
-    - localStorage 
-*/
+    - localStorage : used to save values more permanently. this is different from variable in that variables saves values temporarily. localstorage only supports strings.
+*/   
 
 
-    
+     /*AUTO BOXING
+     This is an invincible box or object which javascript wraps other value in other to allow them to be able to contain properties and methods.e.g 
+     */
+    console.log('hello'.length);
+    console.log ('hello'.toUpperCase());
+
+    /* auto-boxing works with other types of values like numbers and booleans.
+    eg.
+    console.log(3.0.toString());
+    console.log( typeof 3.0.toString());
+
+    console.log(true.toString());
+    another thing to note is that auto-boxing does not work with null and undefined values.
+    */
 
 
+    const object1 = {
+      message: 'hello',
+      time : ['10:23']
+    }
+   console.log(object1.time);
+
+   const object2 = object1
+
+   object1.message = 'Good job!'
+
+   console.log(object1)
    </script>
 </body>
 </html>
